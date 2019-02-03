@@ -10,7 +10,7 @@ Description:
     e.g1:
 	from Producer_Consumer.QueueTool import QueueProducer
 	from Producer_Consumer.QueueTool import QueueConsumer
-	from Producer_Consumer.QueueTool import ConsumerProcess	
+	from Producer_Consumer.QueueTool import QueueConsumerProcess
 
 
 
