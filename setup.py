@@ -18,7 +18,7 @@ sys.path.append("%s/" % cur_dir)
 from setuptools import setup
 from setuptools import find_packages
 try:
-    des = "  "
+    des = "long_desciption" + "\n"
     with open("long_desciption.py", "r") as f:
 	for i in f:
 	    des = des + "  " + str(i) + "\n" 
@@ -27,13 +27,13 @@ except Exception as e:
 
 setup(
     name="Producer_Consumer",
-    version="19.5",
+    version="19.7",
     keywords=("Queue", "queue", "Producer_Consumer", "producer_consumer", "producer", "consumer", "process"),
     description="producer and consumer models",
     long_description=des,
     license="MIT License",
 
-    url="https://github.com/lijiacaigit/Producer_Consumer",
+    url="https://github.com/lijiacaigit/Producer_Comsumer",
     author="Lijiacai",
     author_email="1050518702@qq.com",
 
