@@ -11,7 +11,13 @@ Description:
 	from Producer_Consumer.QueueTool import QueueProducer
 	from Producer_Consumer.QueueTool import QueueConsumer
 	from Producer_Consumer.QueueTool import QueueConsumerProcess
+	import multiprocessing
+	import json
 
+
+	def test_func(data):
+    
+    	    return json.dumps({"result": data})
 
 
 	def test():
