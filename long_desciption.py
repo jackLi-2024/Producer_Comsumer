@@ -4,9 +4,11 @@ from Producer_Consumer.QueueTool import QueueConsumerProcess
 import multiprocessing
 import json
 
+
 def test_func(data):
     """test function"""
     return json.dumps({"result": data})
+
 
 def test():
     """test"""
@@ -22,10 +24,11 @@ def test():
     for i in range(1000000):
         producer.produce(str(i))
 
-    print "produce done"
+    print("produce done")
     for p in process_list:
         p.stop()
         p.join()
+
 
 if __name__ == '__main__':
     test()

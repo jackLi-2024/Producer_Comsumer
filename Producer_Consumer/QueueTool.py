@@ -206,7 +206,7 @@ def test():
     for i in range(1000000):
         producer.produce(str(i))
 
-    print "produce done"
+    print("produce done")
     # wait for child process
     for p in process_list:
         p.stop()
@@ -215,4 +215,3 @@ def test():
 
 if __name__ == '__main__':
     test()
-
